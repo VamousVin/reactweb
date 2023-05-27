@@ -143,7 +143,7 @@ body {
   -webkit-animation: slideInLeft 1.5s ease-out;
 }
 
-.hero .btn {
+.btn {
   display: inline-block;
   padding: 10px;
   width: 200px;
@@ -166,7 +166,75 @@ body {
   -webkit-animation: slideInLeft 1.7s ease-out;
 }
 
-.hero .btn:hover {
+.btn:hover {
   background-color: #b69b06;
   color: var(--buttonText);
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .bg img {
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+  }
+
+  .navbar {
+    height: 2.8rem;
+    margin-top: 10px;
+  }
+
+  .logo a {
+    font-size: 1.8rem;
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .bg img {
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+  }
+
+  .navbar {
+    height: 2.6rem;
+    margin-top: 5px;
+  }
+
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .btn {
+    font-size: 20px;
+    padding: 6px;
+  }
 }

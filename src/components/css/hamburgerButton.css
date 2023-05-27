@@ -40,7 +40,7 @@
 .hamburger {
     display: flex;
     flex-direction: column;
-    height: 15px;
+    height: 21px;
     justify-content: space-between;
     cursor: pointer;
     display: none;
@@ -55,46 +55,8 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 769px) {
-    .bg img {
-        width: 100%;
-        height: 100vh;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-    }
-
-    .menuDrop {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-    }
-}
-
 /* Tablet */
 @media screen and (max-width: 768px) {
-    .bg img {
-        width: 100%;
-        height: 100vh;
-        aspect-ratio: 3/2;
-        object-fit: cover;
-    }
-
-    .navbar {
-        height: 2.8rem;
-        margin-top: 10px;
-    }
-
-    .logo a {
-        font-size: 1.8rem;
-    }
-
-
-    .menu {
-        display: none;
-    }
-
     .hamburger {
         display: flex;
         margin: 20px;
@@ -121,6 +83,7 @@
     .menuDrop a {
         margin: 10px;
         padding: 10px;
+        font-size: 16px;
     }
 
     .menuDrop.block {
@@ -136,26 +99,6 @@
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-    .bg img {
-        width: 100%;
-        height: 100vh;
-        aspect-ratio: 9/16;
-        object-fit: cover;
-    }
-
-    .navbar {
-        height: 2.6rem;
-        margin-top: 5px;
-    }
-
-    .logo a {
-        font-size: 1.4rem;
-    }
-
-    .menu {
-        display: none;
-    }
-
     .hamburger {
         display: flex;
     }
@@ -178,6 +121,7 @@
     .menuDrop a {
         margin: 3px;
         padding: 10px;
+        font-size: 14px;
     }
 
     .menuDrop.block {
@@ -187,18 +131,5 @@
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
         opacity: 1;
-    }
-
-    .hero h1 {
-        font-size: 24px;
-    }
-
-    .hero p {
-        font-size: 20px;
-    }
-
-    .hero .btn {
-        font-size: 20px;
-        padding: 6px;
     }
 }

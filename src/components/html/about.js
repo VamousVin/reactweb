@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const MenuNav = () => {
+const About = () => {
   const [isActive, setIsActive] = useState(false);
 
   const hamburger = () => {
@@ -34,6 +34,7 @@ const MenuNav = () => {
           <span></span>
           <span></span>
           <span></span>
+          <span></span>
         </div>
 
         <div className={`menuDrop ${isActive ? "block" : " "}`}>
@@ -59,4 +60,4 @@ const MenuNav = () => {
   );
 };
 
-export default MenuNav;
+export default About;
